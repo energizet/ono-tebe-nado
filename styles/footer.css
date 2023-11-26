@@ -16,9 +16,6 @@
     letter-spacing: 1px;
 }
 
-.footer__menu {
-}
-
 .footer__menu-list {
     display: flex;
     flex-direction: column;

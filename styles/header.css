@@ -36,6 +36,7 @@
 
 .header__logo {
     height: 105px;
+    border: 0;
 }
 
 .header__logo-image {
@@ -46,7 +47,7 @@
     display: flex;
 }
 
-.address:has(> .header__address){
+.address:has(> .header__address) {
     justify-content: end;
 }
 

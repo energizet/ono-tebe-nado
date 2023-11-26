@@ -39,10 +39,6 @@ html {
   justify-content: center;
 }
 
-body {
-  width: 1440px;
-}
-
 a {
   text-decoration: none;
   border-bottom: 1px solid black;
