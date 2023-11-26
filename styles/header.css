@@ -55,6 +55,7 @@
     flex-direction: column;
     width: fit-content;
     font-style: normal;
+    line-height: 1.3;
 }
 
 .address > * > * {
