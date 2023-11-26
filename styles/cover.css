@@ -23,7 +23,7 @@
 }
 
 .aligned-text_right {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .letter-spacing-extended {
@@ -36,7 +36,7 @@
 
 .cover__description {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding: 50px;
 }

@@ -8,7 +8,7 @@
 }
 
 .address:has(> .footer__address) {
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .footer__address {

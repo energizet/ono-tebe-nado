@@ -48,7 +48,7 @@
 }
 
 .address:has(> .header__address) {
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .address > * {
