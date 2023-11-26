@@ -74,25 +74,29 @@ a {
 }
 
 .overlay {
+    height: 100%;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
 }
 
 *:has(> .overlay) {
     position: relative;
 }
 
-.overlay ~ *:first-of-type {
+.overlay ~ * {
     background: #00000080;
+    height: 100%;
+    width: 100%;
+}
+
+.main > * {
+    margin-bottom: 180px;
 }
 
 .cover {
     text-transform: uppercase;
     color: white;
-}
-
-.cover__image {
-    height: 100%;
 }
 
 .cover__title {
@@ -148,4 +152,51 @@ a {
     font-size: 16pt;
     text-transform: uppercase;
     color: white;
+}
+
+.lots {
+    padding: 0 50px;
+}
+
+.lots__heading {
+    font-size: 30pt;
+    text-transform: uppercase;
+    margin: 25px 40px;
+}
+
+.lots__card-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    height: 450px;
+}
+
+.lots__card-list-item {
+    flex: 1 1 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 40px;
+    overflow: hidden;
+    color: white;
+}
+
+.card__title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 16.8pt;
+    line-height: 1.2;
+}
+
+.card__text {
+    font-size: 15.4pt;
+}
+
+.lots__look-more-link {
+    display: inline-block;
+    margin: 33px 40px;
+    font-size: 15pt;
 }
