@@ -1,6 +1,6 @@
 .lots {
     padding: 0 50px;
-    margin-bottom: 145px;
+    margin-bottom: 150px;
 }
 
 .lots__heading {
@@ -42,6 +42,7 @@
 
 .lots__look-more-link {
     display: inline-block;
-    margin: 33px 40px;
+    margin: 30px 40px;
     font-size: 15pt;
+    text-transform: lowercase;
 }
