@@ -7,8 +7,12 @@
 body {
   min-width: 1100px;
   margin: 0;
-  font-family: Raleway, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   letter-spacing: -0.25px;
+}
+
+body {
+    width: 1440px;
 }
 
 h1,
@@ -30,6 +34,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid black;
   color: inherit;
+  width: fit-content;
 }
 
 img {
@@ -44,16 +49,18 @@ html {
 .overlay {
   height: 100%;
   position: absolute;
-  z-index: -1;
+  inset: 0;
+  z-index: 1;
   object-fit: cover;
+  background: #0009;
 }
 
 *:has(> .overlay) {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
 .overlay ~ * {
-  background: #00000080;
-  height: 100%;
-  width: 100%;
+  z-index: 2;
 }
