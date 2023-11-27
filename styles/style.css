@@ -54,6 +54,7 @@
     text-transform: uppercase;
     color: white;
     background-image: url(../images/cover.jpg);
+    background-size: cover;
 }
 
 .cover__title {
@@ -131,6 +132,7 @@
 
 .lots__card-list-item {
     flex: 1 1 0;
+    background-size: cover;
 }
 
 .card_type_film {
