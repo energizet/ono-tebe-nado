@@ -54,6 +54,7 @@
     text-transform: uppercase;
     color: white;
     background-image: url(../images/cover.jpg);
+    background-position: center;
     background-size: cover;
 }
 
@@ -124,14 +125,18 @@
 }
 
 .lots__card-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
     gap: 25px;
     list-style: none;
 }
 
 .lots__card-list-item {
+    height: 450px;
+    min-width: 30%;
     flex: 1 1 0;
+    background-position: center;
     background-size: cover;
 }
 
@@ -147,11 +152,16 @@
     background-image: url(../images/card-lot-03.jpg);
 }
 
+.card-link {
+    height: 100%;
+    width: 100%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 450px;
+    height: 100%;
     padding: 50px 40px;
     overflow: hidden;
     color: white;
@@ -176,23 +186,24 @@
 }
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
-    grid-template-areas:
-        'logo title title'
-        '. text text';
-    gap: 10px 25px;
+    display: flex;
+    gap: 25px;
     margin: 50px;
-    justify-items: start;
-    align-items: center;
+}
+
+.about__column {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.about__column:has(> .about__text) {
+    flex: 2 1 25px;
 }
 
 .about__logo {
     display: flex;
     align-items: center;
-    grid-area: logo;
-    justify-self: center;
     height: 240px;
     width: 240px;
     background: black;
@@ -203,32 +214,29 @@
     height: 114px;
 }
 
-.about__title {
-    grid-area: title;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 30pt;
-}
-
 .about__text {
     display: flex;
     flex-direction: column;
     gap: 28px;
-    grid-area: text;
-    align-self: start;
     font-size: 15pt;
     line-height: 1.15;
     letter-spacing: 0;
+}
+
+.about__title {
+    display: flex;
+    align-items: center;
+    flex: 1 1 240px;
+    margin-bottom: -18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30pt;
 }
 
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 184px 50px 85px;
-}
-
-.footer > * {
-    flex: 1 1 0;
 }
 
 .footer__address {
